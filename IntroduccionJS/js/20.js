@@ -1,7 +1,7 @@
 // LOGICAL OR Y LOGICAL AND
-// const saldo = 1000
-// const pagar =1200
-// const tarjeta = false
+// // const saldo = 1000
+// // const pagar =1200
+// // const tarjeta = false
 
 /**
  * logical Or y Logical And
