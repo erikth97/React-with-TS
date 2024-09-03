@@ -5,9 +5,7 @@ import { db } from "./data/data"
 
 function App() {
 
-    const [data, setData] = useState(db)
-
-    console.log(db)
+    const [data, setData ] = useState(db)
 
   return (
     <>
@@ -18,13 +16,10 @@ function App() {
         <h2 className="text-center">Nuestra Colección</h2>
 
         <div className="row mt-5">
-            <Guitar />
-            <Guitar />
-            <Guitar />
-            <Guitar />
-            <Guitar />
-            <Guitar />
-            <Guitar />
+            {data.map((item, index) => (
+                <Guitar key={index} />
+            ))}
+
         </div>
     </main>
 
