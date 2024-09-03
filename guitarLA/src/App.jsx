@@ -1,16 +1,13 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import Guitar from "./components/Guitar"
 import Header from "./components/Header"
-
+import { db } from "./data/data"
 
 function App() {
-    const [auth, setAuth] = useState(false)
 
-    useEffect(() => {
-        if(auth) {
-            console.log('autenticado')
-        }
-    }, [auth])
+    const [data, setData] = useState(db)
+
+    console.log(db)
 
   return (
     <>
