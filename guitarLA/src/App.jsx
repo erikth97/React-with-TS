@@ -5,11 +5,15 @@ import { db } from "./data/data"
 
 function App() {
 
-    const [data, setData ] = useState(db)
+    const [data, setData] = useState(db)
+    const [cart, setCart] = useState([])
+
+    function addToCart(item) {
+        setCart(prevCart => [...prevCart, item])
+    }
 
   return (
     <>
-    
     <Header />
 
     <main className="container-xl mt-5">
@@ -20,6 +24,8 @@ function App() {
                 <Guitar 
                     key={guitar.id}
                     guitar={guitar}
+                    setCart={setCart}
+                    addToCart={addToCart}
                 />
             ))}
 
