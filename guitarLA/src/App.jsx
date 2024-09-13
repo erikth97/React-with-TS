@@ -4,7 +4,7 @@ import { useCart } from "./hooks/useCart"
 
 function App() {
 
-    const {} = useCart() 
+    const {data, cart, addToCart, removeFromCart, decreaseQuantity, increaseQuantity, clearCart} = useCart() 
 
   return (
     <>
@@ -24,7 +24,6 @@ function App() {
                 <Guitar 
                     key={guitar.id}
                     guitar={guitar}
-                    setCart={setCart}
                     addToCart={addToCart}
                 />
             ))}
