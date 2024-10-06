@@ -10,10 +10,10 @@ function App() {
       </header>
 
       <main className=" max-w-7xl mx-auto py-20 grid md:grid-cols-2">
-        <div className=" p-5">
-          <h2 className=" text-4xl font-black">Menu</h2>
+        <div className='p-5'>
+          <h2 className='font-black text-4xl'>Menu</h2>
 
-          <div className=" space-y-3">
+          <div className="mt-10 space-y-3">
             {menuItems.map(item => (
               <MenuItem
                 key={item.id}
