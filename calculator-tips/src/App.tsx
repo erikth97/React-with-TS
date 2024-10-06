@@ -1,9 +1,15 @@
+import { menuItems } from "./data/db"
+
 
 function App() {
 
+  console.log(menuItems)
+
   return (
     <>
-      <h1 className=" text-8xl font-black">Hola</h1>
+      <header className=" bg-teal-400 py-5">
+        <h1 className=" text-center text-4xl font-black">Propinas y Consumo App</h1>
+      </header>
     </>
   )
 }
